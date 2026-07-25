@@ -189,15 +189,12 @@ Replace Existing File
 
 ---
 
-## 🎯 Objective
 
-এই Part-এ আমরা তৈরি করবো—
+
 
 - Root ConstraintLayout
 - Toolbar
 - Display Section
-
-Calculator Button Part-02 থেকে শুরু হবে।
 
 ---
 
@@ -546,7 +543,7 @@ Calculator Button Part-02 থেকে শুরু হবে।
 
 # Project Structure
 
-```
+
 app
 
 └── src
@@ -586,5 +583,5 @@ app
                    strings.xml
 ```
 
----
+
 
