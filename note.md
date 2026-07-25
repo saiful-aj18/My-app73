@@ -417,7 +417,7 @@ Calculator Button Part-02 থেকে শুরু হবে।
         android:textColor="@color/black"
         android:background="@drawable/button_operator"/>
 
-        ---
+        
 
 <!-- ================= Row 3 ================= -->
 
