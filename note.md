@@ -583,5 +583,106 @@ app
                    strings.xml
 ```
 
+# 📱 File: MainActivity.kt
+
+## 📂 Location
+
+```
+app
+└── src
+    └── main
+        └── java
+            └── com
+                └── example
+                    └── calculator
+                        └── MainActivity.kt
+```
+
+---
+
+## Action
+
+```
+Replace Existing File
+```
+
+---
+
+## Code
+
+```kotlin
+package com.example.calculator
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // Load Login UI
+        setContentView(R.layout.activity_main)
+
+        // UI only
+        // No Login Logic
+        // No Firebase
+        // No Database
+    }
+}
+```
+
+---
+
+## Output
+
+```
+App Launch
+      │
+      ▼
+MainActivity
+      │
+      ▼
+activity_main.xml
+      │
+      ▼
+Login Screen Display
+```
+
+---
+
+## Next Step (Optional)
+
+যদি Button Click দেখাতে চাও (কোনো Login Logic ছাড়া), তাহলে নিচের Code যোগ করতে পারো।
+
+```kotlin
+package com.example.calculator
+
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val btnLogin = findViewById<MaterialButton>(R.id.btnLogin)
+
+        btnLogin.setOnClickListener {
+
+            Toast.makeText(
+                this,
+                "Login Button Clicked",
+                Toast.LENGTH_SHORT
+            ).show()
+
+        }
+    }
+}
+```
+
 
 
