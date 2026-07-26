@@ -61,8 +61,7 @@ fun FitnessScreen() {
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(bottom = 16.dp)
             )
-
-
+            
             Image(
                 painter = painterResource(id = R.drawable.fitness),
                 contentDescription = "Fitness Logo",
